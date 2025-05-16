@@ -1,4 +1,4 @@
-# dynamic-ai-regler
+# dynamic-ai-controller
 AI-powered adaptive control system for industrial applications
 
 This project is under active development. Currently working on integrating Node-RED with Siemens PLCs via OPC UA or nodeS7
