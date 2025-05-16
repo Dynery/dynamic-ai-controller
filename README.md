@@ -47,3 +47,31 @@ Feel free to fork, suggest, or contribute. Pull requests are welcome!
 
 
 
+
+## ⚙️ Node-RED Setup
+
+To use the PLC communication part of this project, please install Node-RED and the required modules on your machine.
+
+
+### 🧰 Prerequisites
+Make sure you have Node.js and npm installed
+
+- Install Node-RED
+
+  sudo npm install -g --unsafe-perm node-red
+  
+  Once Node-RED is installed, navigate to your Node-RED user directory:
+
+  cd ~/.node-red
+  
+
+- Install Required Node-RED Modules
+
+  npm install nodes7
+  
+  npm install -g node-red-contrib-opcua
+
+
+
+
+
