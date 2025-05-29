@@ -25,7 +25,7 @@ Special thanks to the [nodeS7](https://github.com/plcpeople/nodeS7) project and 
 
 ## Roadmap
 - [x] Repository created
-- [ ] Node-RED ↔ SPS integration **(in progress)**
+- [x] Node-RED ↔ SPS integration **(in progress)**
 - [ ] Data logging and preprocessing
 - [ ] AI model development for parameter tuning
 - [ ] Real-time integration and testing
@@ -45,31 +45,68 @@ Feel free to fork, suggest, or contribute. Pull requests are welcome!
 
 
 
+## ⚙️ Getting Started with Docker
 
+This project includes Node-RED, Python-based AI integration, and PLC communication — all bundled in a Docker image for easy setup.
 
-
-## ⚙️ Node-RED Setup
-
-To use the PLC communication part of this project, please install Node-RED and the required modules on your machine.
 
 
 ### 🧰 Prerequisites
-Make sure you have Node.js and npm installed
 
-- Install Node-RED
+- Docker installed on your system  
+  [Get Docker](https://docs.docker.com/get-docker/)
 
-  sudo npm install -g --unsafe-perm node-red
-  
-  Once Node-RED is installed, navigate to your Node-RED user directory:
 
-  cd ~/.node-red
-  
 
-- Install Required Node-RED Modules
+### 🚀 Getting Started
 
-  npm install nodes7
-  
-  npm install -g node-red-contrib-opcua
+1. Clone this repository:
+
+```bash
+git clone https://github.com/Dynery/dynamic-ai-controller.git
+cd dynamic-ai-controller
+```
+
+2. Build the Docker image:
+```
+docker build -t dynamic-ai .
+```
+
+3. Run the container:
+```
+docker run -p 1880:1880 dynamic-ai
+```
+
+4. Open Node-RED in your browser:
+```
+http://localhost:1880
+```
+
+
+
+
+
+
+
+
+## ⚠️ **Safety and Responsibility Disclaimer**
+
+This project is intended for educational, testing, and prototyping purposes only.
+
+If you plan to connect this system to a real industrial process or live production environment, you do so **at your own risk**.
+
+Always ensure proper **industrial safety procedures**, **process isolation**, and **fail-safe mechanisms** are in place.
+
+The developers of this project are **not responsible** for any damage, injury, or downtime caused by improper or unsafe usage.
+
+
+
+
+
+
+
+
+
 
 
 
