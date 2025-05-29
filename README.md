@@ -69,12 +69,12 @@ cd dynamic-ai-controller
 
 2. Build the Docker image:
 ```
-docker build -t dynamic-ai .
+sudo docker build -t dynamic-ai .
 ```
 
 3. Run the container:
 ```
-docker run -p 1880:1880 dynamic-ai
+sudo docker run -p 1880:1880 dynamic-ai
 ```
 
 4. Open Node-RED in your browser:
