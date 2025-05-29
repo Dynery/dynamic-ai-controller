@@ -172,3 +172,19 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# --- Custom for this project ---
+
+# Node-RED files
+flows_cred.json
+*.backup
+*.bak
+
+# ML model
+*.pkl
+ai_model/*.pkl
+
+# Training data
+data/*.csv
+
+
