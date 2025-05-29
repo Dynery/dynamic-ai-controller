@@ -69,7 +69,7 @@ cd dynamic-ai-controller
 
 2. Build the Docker image:
 ```
-sudo docker build -t dynamic-ai .
+sudo docker build -t dynamic-ai-controller .
 ```
 
 3. Run the container:
